@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <style>
+        @font-face {
+            font-family: 'Euclid Circular B';
+            font-weight:400;                                                            
+            font-style: normal;
+            font-display: swap;
+            src: url('assets/fonts/EuclidCircularB-Regular.woff') format('woff'), 
+            url('assets/fonts/EuclidCircularB-Regular.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Euclid Circular B';
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+            src: url('assets/fonts/EuclidCircularB-SemiBold.woff') format('woff'), 
+            url('assets/fonts/EuclidCircularB-SemiBold.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Euclid Circular B';
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+            src: url('assets/fonts/EuclidCircularB-Bold.woff') format('woff'), 
+            url('assets/fonts/EuclidCircularB-Bold.woff2') format('woff2');
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <header class="header">
+            <div class="header__inner container">
+                <div class="header__logo logo">
+                    <a href="/"><span>C</span>omfort Taxi</a>
+                </div>
+                <nav class="header__menu menu">
+                    <ul class="header__menu-list">
+                        <li><a href="#tariffs">Тарифы</a></li>
+                        <li><a href="#tariffs">Марки автомобилей</a></li>
+                        <li><a href="#tariffs">О нас</a></li>
+                        <li><a href="#tariffs">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__phones phones">
+                    <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8.5" cy="8.5" r="8.5" fill="white"/>
+                        <path d="M11.9872 10.6544L10.8864 9.35681C10.4933 8.89337 9.82497 9.07876 9.66772 9.68121C9.54977 10.0983 9.15664 10.33 8.80281 10.2373C8.01654 10.0056 6.95507 8.80068 6.7585 7.82747C6.64056 7.41035 6.87644 6.94692 7.23026 6.8079C7.74134 6.62253 7.8986 5.83469 7.50546 5.37125L6.40468 4.07363C6.09017 3.74922 5.6184 3.74922 5.34321 4.07363L4.59625 4.95416C3.84929 5.88103 4.67487 8.33725 6.52262 10.5154C8.37036 12.6936 10.454 13.7131 11.2403 12.7862L11.9872 11.9057C12.2624 11.535 12.2624 10.9788 11.9872 10.6544Z" fill="black"/>
+                    </svg>
+                    <a href="tel:+380667886345">+ 38 (066) 788-63-45</a>
+                    <a href="tel:+380667886345">+ 38 (066) 788-63-45</a>
+                </div>
+                <div class="header__burger"></div>
+                <div id="menu_mob" class="menu-mob ">
+                    <div class="menu-mob-wrapper">
+                        <div class="menu-mob__close">+</div>
+                        <div class="menu-mob__logo logo">
+                            <a href="/"><span>C</span>omfort Taxi</a>
+                        </div>
+                        <nav class="menu-mob__menu menu">
+                            <ul class="menu-mob__list">
+                                <li><a href="#tariffs">Тарифы</a></li>
+                                <li><a href="#tariffs">Марки автомобилей</a></li>
+                                <li><a href="#tariffs">О нас</a></li>
+                                <li><a href="#tariffs">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="menu-mob__phones phones">
+                            <a href="tel:+380667886345">+ 38 (066) 788-63-45</a>
+                            <a href="tel:+380667886345">+ 38 (066) 788-63-45</a>
+                        </div>
+                        <div class="menu-mob__social">
+                            <a class="menu-mob__social-link" href="">
+                                <svg>
+                                    <use xlink:href="assets/img/sprite.svg#telegram"></use>
+                                </svg>
+                            </a>
+                            <a class="menu-mob__social-link" href="">
+                                <svg>
+                                    <use xlink:href="assets/img/sprite.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                            <a class="menu-mob__social-link" href="">
+                                <svg>
+                                    <use xlink:href="assets/img/sprite.svg#viber"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- <div id="menu_mob" class="menu-mob container">
+            <div class="menu-mob__close">+</div>
+            <div class="menu-mob__logo logo">
+                <a href="/"><span>C</span>omfort Taxi</a>
+            </div>
+            <nav class="menu-mob__menu menu">
+                <ul class="menu-mob__list">
+                    <li><a href="#tariffs">Тарифы</a></li>
+                    <li><a href="#tariffs">Марки автомобилей</a></li>
+                    <li><a href="#tariffs">О нас</a></li>
+                    <li><a href="#tariffs">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="menu-mob__phones phones">
+                <a href="tel:+380667886345">+ 38 (066) 788-63-45</a>
+                <a href="tel:+380667886345">+ 38 (066) 788-63-45</a>
+            </div>
+            <div class="menu-mob__social">
+                <a class="menu-mob__social-link" href="">
+                    <svg>
+                        <use xlink:href="assets/img/sprite.svg#telegram"></use>
+                    </svg>
+                </a>
+                <a class="menu-mob__social-link" href="">
+                    <svg>
+                        <use xlink:href="assets/img/sprite.svg#whatsapp"></use>
+                    </svg>
+                </a>
+                <a class="menu-mob__social-link" href="">
+                    <svg>
+                        <use xlink:href="assets/img/sprite.svg#viber"></use>
+                    </svg>
+                </a>
+            </div>
+        </div> -->
+        
+        
+        <div class="content">
+            
+            <section class="offer container">
+                <div class="offer__slider-wrapper">
+                    <div class="offer__slider swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="offer__slide swiper-slide">
+                                <div class="offer__car">
+                                    <img src="assets/img/taxi-main.png" alt="">
+                                    <div class="offer__circle"></div>
+                                </div>
+                                <button class="offer__slide-btn">
+                                    <div class="offer__btn-text">
+                                        <p class="offer__btn-name">Toyota Camry</p>
+                                        <p class="offer__btn-class">Премиум</p>
+                                    </div>
+                                    <p class="offer__btn-order">Заказать</p>
+                                </button>
+                            </div>
+                            
+                            <div class="offer__slide swiper-slide">
+                                <div class="offer__car">
+                                    <img src="assets/img/taxi-main.png" alt="">
+                                    <div class="offer__circle"></div>
+                                </div>
+                                <button class="offer__slide-btn">
+                                    <div class="offer__btn-text">
+                                        <p class="offer__btn-name">Toyota Camry</p>
+                                        <p class="offer__btn-class">Премиум</p>
+                                    </div>
+                                    <p class="offer__btn-order">Заказать</p>
+                                </button>
+                            </div>
+            
+                            <div class="offer__slide swiper-slide">
+                                <div class="offer__car">
+                                    <img src="assets/img/taxi-main.png" alt="">
+                                    <div class="offer__circle"></div>
+                                </div>
+                                <button class="offer__slide-btn">
+                                    <div class="offer__btn-text">
+                                        <p class="offer__btn-name">Toyota Camry</p>
+                                        <p class="offer__btn-class">Премиум</p>
+                                    </div>
+                                    <p class="offer__btn-order">Заказать</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="offer__pagination">
+                            <div class="offer__slider-prev">
+                                <svg>
+                                    <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                                </svg>
+                            </div>
+                            <div class="offer__pagination-nav"></div>
+                            <div class="offer__slider-next">
+                                <svg>
+                                    <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer__text">
+                    <h1 class="offer__title">Быстрые и доступные поездки</h1>
+                    <h2 class="offer__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna maecenas ac leo nibh consectetur amet in</h2>
+                    <div class="offer__btn-wrap">
+                        <a class="offer__btn btn" href="">Заказать</a>
+                    </div>
+                </div>
+                <div class="offer__social">
+                    <a class="offer__social-link" href="">
+                        <svg>
+                            <use xlink:href="assets/img/sprite.svg#telegram"></use>
+                        </svg>
+                    </a>
+                    <a class="offer__social-link" href="">
+                        <svg>
+                            <use xlink:href="assets/img/sprite.svg#whatsapp"></use>
+                        </svg>
+                    </a>
+                    <a class="offer__social-link" href="">
+                        <svg>
+                            <use xlink:href="assets/img/sprite.svg#viber"></use>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+            
+            <section class="tariffs container">
+                <h2 class="tariffs__title gradient">Тарифы</h2>
+                <div class="tariffs__cards">
+                    <div class="tariffs__card">
+                        <div class="tariffs__inner">
+                            <div class="tariffs__card-img">
+                                <img src="assets/img/taxi-card.png" alt="">
+                            </div>
+                            <h3 class="tariffs__card-title">VIP</h3>
+                            <p class="tariffs__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna maecenas ac leo nibh consectetur amet in</p>
+                            <p class="tariffs__card-price">6 грн/км</p>
+                            <a class="tariffs__card-btn btn-trans" href="">Заказать</a>
+                        </div>
+                    </div>
+                    <div class="tariffs__card">
+                        <div class="tariffs__inner">
+                            <div class="tariffs__card-img">
+                                <img src="assets/img/taxi-card.png" alt="">
+                            </div>
+                            <h3 class="tariffs__card-title">VIP</h3>
+                            <p class="tariffs__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna maecenas ac leo nibh consectetur amet in</p>
+                            <p class="tariffs__card-price">6 грн/км</p>
+                            <a class="tariffs__card-btn btn-trans" href="">Заказать</a>
+                        </div>
+                    </div>
+                    <div class="tariffs__card">
+                        <div class="tariffs__inner">
+                            <div class="tariffs__card-img">
+                                <img src="assets/img/taxi-card.png" alt="">
+                            </div>
+                            <h3 class="tariffs__card-title">VIP</h3>
+                            <p class="tariffs__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna maecenas ac leo nibh consectetur amet in</p>
+                            <p class="tariffs__card-price">6 грн/км</p>
+                            <a class="tariffs__card-btn btn-trans" href="">Заказать</a>
+                        </div>
+                    </div>
+                    <div class="tariffs__card">
+                        <div class="tariffs__inner">
+                            <div class="tariffs__card-img">
+                                <img src="assets/img/taxi-card.png" alt="">
+                            </div>
+                            <h3 class="tariffs__card-title">VIP</h3>
+                            <p class="tariffs__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna maecenas ac leo nibh consectetur amet in</p>
+                            <p class="tariffs__card-price">6 грн/км</p>
+                            <a class="tariffs__card-btn btn-trans" href="">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="tabs container">
+                <h2 class="tabs__title gradient">Марки</h2>
+                <div class="tabs__wrapper">
+                    <ul class="tabs__nav">
+                        <li class="tabs__nav-item">Эконом - 6 грн/км</li>
+                        <li class="tabs__nav-item">Премиум - 6 грн/км</li>
+                        <li class="tabs__nav-item">VIP - 6 грн/км</li>
+                        <li class="tabs__nav-item">Минивэн - 6 грн/км</li>
+                    </ul>
+                    <div class="tabs__content" id="tab-1">
+                        <div class="tabs__content-item">
+                            <div class="swiper-container tabs__slider-container" data-slider="0">
+                                <div class="tabs__slider-wrapper swiper-wrapper">
+                                    <div class="tabs__slider-slide swiper-slide">
+                                        <div class="tabs__slider-inner">
+                                            <div class="tabs__item-wrap">
+                                                <div class="tabs__item-img">
+                                                    <img src="assets/img/taxi-card.png" alt="">
+                                                </div>
+                                                <div class="tabs__btn-wrap">
+                                                    <h3 class="tabs__item-title">Toyota Land Cruser</h3>
+                                                    <button class="tabs__item-btn btn">Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__slider-slide swiper-slide">
+                                        <div class="tabs__slider-inner">
+                                            <div class="tabs__item-wrap">
+                                                <div class="tabs__item-img">
+                                                    <img src="assets/img/taxi-card.png" alt="">
+                                                </div>
+                                                <div class="tabs__btn-wrap">
+                                                    <h3 class="tabs__item-title">Toyota Land Cruser</h3>
+                                                    <button class="tabs__item-btn btn">Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__slider-slide swiper-slide">
+                                        <div class="tabs__slider-inner">
+                                            <div class="tabs__item-wrap">
+                                                <div class="tabs__item-img">
+                                                    <img src="assets/img/taxi-card.png" alt="">
+                                                </div>
+                                                <div class="tabs__btn-wrap">
+                                                    <h3 class="tabs__item-title">Toyota Land Cruser</h3>
+                                                    <button class="tabs__item-btn btn">Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <div class="tabs__pagination">
+                                <div class="tabs__slider-prev" data-slider-prev="0">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="tabs__pagination-nav" data-slider-nav="0"></div>
+                                <div class="tabs__slider-next" data-slider-next="0">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="tabs__content" id="tab-2"> 
+                        <div class="tabs__content-item">
+                            <div class="swiper-container tabs__slider-container" data-slider="1">
+                                <div class="tabs__slider-wrapper swiper-wrapper">
+                                    <div class="tabs__slider-slide swiper-slide">
+                                        <div class="tabs__slider-inner">
+                                            <div class="tabs__item-wrap">
+                                                <div class="tabs__item-img">
+                                                    <img src="assets/img/taxi-card.png" alt="">
+                                                </div>
+                                                <div class="tabs__btn-wrap">
+                                                    <h3 class="tabs__item-title">Toyota Land Cruser</h3>
+                                                    <button class="tabs__item-btn">Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__slider-slide swiper-slide">
+                                        <div class="tabs__slider-inner">
+                                            <div class="tabs__item-wrap">
+                                                <div class="tabs__item-img">
+                                                    <img src="assets/img/taxi-card.png" alt="">
+                                                </div>
+                                                <div class="tabs__btn-wrap">
+                                                    <h3 class="tabs__item-title">Toyota Land Cruser</h3>
+                                                    <button class="tabs__item-btn">Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__slider-slide swiper-slide">
+                                        <div class="tabs__slider-inner">
+                                            <div class="tabs__item-wrap">
+                                                <div class="tabs__item-img">
+                                                    <img src="assets/img/taxi-card.png" alt="">
+                                                </div>
+                                                <div class="tabs__btn-wrap">
+                                                    <h3 class="tabs__item-title">Toyota Land Cruser</h3>
+                                                    <button class="tabs__item-btn">Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <div class="tabs__pagination">
+                                <div class="tabs__slider-prev" data-slider-prev="1">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="tabs__pagination-nav" data-slider-nav="1"></div>
+                                <div class="tabs__slider-next" data-slider-next="1">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="tabs__content" id="tab-3">
+                        <div class="tabs__content-item">
+                            <div class="swiper-container tabs__slider-container" data-slider="2">
+                                <div class="tabs__slider-wrapper swiper-wrapper">
+                                    <div class="tabs__slider-slide swiper-slide">
+                                        <div class="tabs__slider-inner">
+                                            <div class="tabs__item-wrap">
+                                                <div class="tabs__item-img">
+                                                    <img src="assets/img/taxi-card.png" alt="">
+                                                </div>
+                                                <div class="tabs__btn-wrap">
+                                                    <h3 class="tabs__item-title">Toyota Land Cruser</h3>
+                                                    <button class="tabs__item-btn">Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__slider-slide swiper-slide">
+                                        <div class="tabs__slider-inner">
+                                            <div class="tabs__item-wrap">
+                                                <div class="tabs__item-img">
+                                                    <img src="assets/img/taxi-card.png" alt="">
+                                                </div>
+                                                <div class="tabs__btn-wrap">
+                                                    <h3 class="tabs__item-title">Toyota Land Cruser</h3>
+                                                    <button class="tabs__item-btn">Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__slider-slide swiper-slide">
+                                        <div class="tabs__slider-inner">
+                                            <div class="tabs__item-wrap">
+                                                <div class="tabs__item-img">
+                                                    <img src="assets/img/taxi-card.png" alt="">
+                                                </div>
+                                                <div class="tabs__btn-wrap">
+                                                    <h3 class="tabs__item-title">Toyota Land Cruser</h3>
+                                                    <button class="tabs__item-btn">Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <div class="tabs__pagination">
+                                <div class="tabs__slider-prev" data-slider-prev="2">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="tabs__pagination-nav" data-slider-nav="2"></div>
+                                <div class="tabs__slider-next" data-slider-next="2">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="tabs__content" id="tab-4">
+                        <div class="tabs__content-item">
+                            <div class="swiper-container tabs__slider-container" data-slider="3">
+                                <div class="tabs__slider-wrapper swiper-wrapper">
+                                    <div class="tabs__slider-slide swiper-slide">
+                                        <div class="tabs__slider-inner">
+                                            <div class="tabs__item-wrap">
+                                                <div class="tabs__item-img">
+                                                    <img src="assets/img/taxi-card.png" alt="">
+                                                </div>
+                                                <div class="tabs__btn-wrap">
+                                                    <h3 class="tabs__item-title">Toyota Land Cruser</h3>
+                                                    <button class="tabs__item-btn">Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__slider-slide swiper-slide">
+                                        <div class="tabs__slider-inner">
+                                            <div class="tabs__item-wrap">
+                                                <div class="tabs__item-img">
+                                                    <img src="assets/img/taxi-card.png" alt="">
+                                                </div>
+                                                <div class="tabs__btn-wrap">
+                                                    <h3 class="tabs__item-title">Toyota Land Cruser</h3>
+                                                    <button class="tabs__item-btn">Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__slider-slide swiper-slide">
+                                        <div class="tabs__slider-inner">
+                                            <div class="tabs__item-wrap">
+                                                <div class="tabs__item-img">
+                                                    <img src="assets/img/taxi-card.png" alt="">
+                                                </div>
+                                                <div class="tabs__btn-wrap">
+                                                    <h3 class="tabs__item-title">Toyota Land Cruser</h3>
+                                                    <button class="tabs__item-btn">Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <div class="tabs__pagination">
+                                <div class="tabs__slider-prev" data-slider-prev="3">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="tabs__pagination-nav" data-slider-nav="3"></div>
+                                <div class="tabs__slider-next" data-slider-next="3">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+            
+            <section class="ready">
+                <div class="ready__decor"></div>
+                <div class="ready__bg">comfort</div>
+                <div class="ready__wrapper container">
+                    <div class="ready__text-wrap">
+                        <h2 class="ready__title">Готовы ехать?</h2>
+                        <h3 class="ready__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna maecenas ac leo nibh consectetur amet in</h3>
+                    </div>
+                    <div class="ready__btn-wrap">
+                        <button class="ready__btn btn">Заказать</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="about container">
+                <h2 class="about__title gradient">О нас</h2>
+                <div class="about__mobile-slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="about__card-slide">
+                                <div class="about__content-slide">
+                                    <div class="about__options">
+                                        <h4 class="about__option-title">Быстрые поездки</h4>
+                                        <p class="about__options-desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna maecenas ac leo nibh consectetur amet in</p>
+                                    </div>
+                                    <div class="about__options">
+                                        <h4 class="about__option-title">Быстрые поездки</h4>
+                                        <p class="about__options-desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna maecenas ac leo nibh consectetur amet in</p>
+                                    </div>
+                                    <div class="about__options">
+                                        <h4 class="about__option-title">Быстрые поездки</h4>
+                                        <p class="about__options-desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna maecenas ac leo nibh consectetur amet in</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+            
+                        <div class="swiper-slide">
+                            <div class="about__card-slide">
+                                <div class="about__content-slide">
+                                    <div class="about__options">
+                                        <h4 class="about__option-title">Быстрые поездки</h4>
+                                        <p class="about__options-desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna maecenas ac leo nibh consectetur amet in</p>
+                                    </div>
+                                    <div class="about__options">
+                                        <h4 class="about__option-title">Быстрые поездки</h4>
+                                        <p class="about__options-desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna maecenas ac leo nibh consectetur amet in</p>
+                                    </div>
+                                    <div class="about__options">
+                                        <h4 class="about__option-title">Быстрые поездки</h4>
+                                        <p class="about__options-desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna maecenas ac leo nibh consectetur amet in</p>
+                                    </div>
+                                </div>
+                             
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__image">
+                        <div class="about__slide-img">
+                            <img src="assets/img/front-car.png" alt="">
+                        </div>
+                        <div class="about__decor"></div>
+                    </div>
+                </div>
+                <div class="about__pagination-nav">
+                    <div class="about__button-prev">
+                        <svg>
+                            <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="about__pagination"></div>
+                    <div class="about__button-next">
+                        <svg>
+                            <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+                <!-- desktop -->
+                <div class="about__desk">
+                    <ul class="about__desk-list">
+                        <li>
+                            <h4 class="about__desk-title">Быстрые поездки</h4>
+                            <p class="about__desk-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna maecenas ac leo nibh consectetur amet in</p>
+                        </li>
+                        <li>
+                            <h4 class="about__desk-title">Быстрые поездки</h4>
+                            <p class="about__desk-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna maecenas ac leo nibh consectetur amet in</p>
+                        </li>
+                        <li>
+                            <h4 class="about__desk-title">Быстрые поездки</h4>
+                            <p class="about__desk-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna maecenas ac leo nibh consectetur amet in</p>
+                        </li>
+                    </ul>
+                    <div class="about__desk-image">
+                        <div class="about__slide-img">
+                            <img src="assets/img/front-car.png" alt="">
+                        </div>
+                        <div class="about__decor"></div>
+                    </div>
+                    <ul class="about__desk-list">
+                        <li>
+                            <h4 class="about__desk-title">Быстрые поездки</h4>
+                            <p class="about__desk-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna maecenas ac leo nibh consectetur amet in</p>
+                        </li>
+                        <li>
+                            <h4 class="about__desk-title">Быстрые поездки</h4>
+                            <p class="about__desk-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna maecenas ac leo nibh consectetur amet in</p>
+                        </li>
+                        <li>
+                            <h4 class="about__desk-title">Быстрые поездки</h4>
+                            <p class="about__desk-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna maecenas ac leo nibh consectetur amet in</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="contacts container"> 
+                <h2 class="contacts__title gradient">Контакты</h2>
+                <div class="contacts__item">
+                    <div class="contacts__number">
+                        <a href="tell:380667886345">+ 38 (066) 788-63-45</a>
+                        <a href="tell:380667886345">+ 38 (066) 788-63-45</a>
+                    </div>
+                    <div class="contacts__social">
+                        <a class="contacts__social-link" href="">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                        <a class="contacts__social-link" href="">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#whatsapp"></use>
+                            </svg>
+                        </a>
+                        <a class="contacts__social-link" href="">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#viber"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__inner container">
+                <div class="footer__logo logo">
+                    <a href="/"><span>C</span>omfort Taxi</a>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li><a href="#tarifs">Тарифы</a></li>
+                        <li><a href="#tarifs">Марки автомобилей</a></li>
+                        <li><a href="#tarifs">О нас</a></li>
+                        <li><a href="#tarifs">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__phones">
+                    <a href="tel:+380667886345">+ 38 (066) 788-63-45</a>
+                    <a href="tel:+380667886345">+ 38 (066) 788-63-45</a>
+                </div>
+            </div>
+        </footer>    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/autosize.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.min.js"></script></body>
+
+</html>
